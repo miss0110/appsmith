@@ -1,0 +1,1729 @@
+{
+  "unpublishedPage": {
+    "name": "reservation",
+    "slug": "reservation",
+    "customSlug": "",
+    "layouts": [
+      {
+        "viewMode": false,
+        "dsl": {
+          "widgetName": "MainContainer",
+          "backgroundColor": "none",
+          "rightColumn": 4896,
+          "snapColumns": 64,
+          "detachFromLayout": true,
+          "widgetId": "0",
+          "topRow": 0,
+          "bottomRow": 1520,
+          "containerStyle": "none",
+          "snapRows": 125,
+          "parentRowSpace": 1,
+          "type": "CANVAS_WIDGET",
+          "canExtend": true,
+          "version": 75,
+          "minHeight": 1292,
+          "dynamicTriggerPathList": [],
+          "parentColumnSpace": 1,
+          "dynamicBindingPathList": [],
+          "leftColumn": 0,
+          "children": [
+            {
+              "boxShadow": "none",
+              "widgetName": "Modal1",
+              "isCanvas": true,
+              "displayName": "Modal",
+              "iconSVG": "/static/media/icon.4975978e9a961fb0bfb4e38de7ecc7c5.svg",
+              "searchTags": [
+                "dialog",
+                "popup",
+                "notification"
+              ],
+              "topRow": 57,
+              "bottomRow": 447,
+              "parentRowSpace": 10,
+              "type": "MODAL_WIDGET",
+              "hideCard": false,
+              "shouldScrollContents": true,
+              "animateLoading": true,
+              "parentColumnSpace": 28.28125,
+              "leftColumn": 19,
+              "dynamicBindingPathList": [
+                {
+                  "key": "borderRadius"
+                }
+              ],
+              "children": [
+                {
+                  "widgetName": "Canvas1",
+                  "displayName": "Canvas",
+                  "topRow": 0,
+                  "bottomRow": 390,
+                  "parentRowSpace": 1,
+                  "type": "CANVAS_WIDGET",
+                  "canExtend": true,
+                  "hideCard": true,
+                  "shouldScrollContents": false,
+                  "minHeight": 390,
+                  "parentColumnSpace": 1,
+                  "leftColumn": 0,
+                  "dynamicBindingPathList": [],
+                  "children": [
+                    {
+                      "boxShadow": "none",
+                      "widgetName": "Input2Copy",
+                      "displayName": "Input",
+                      "iconSVG": "/static/media/icon.9f505595da61a34f563dba82adeb06ec.svg",
+                      "searchTags": [
+                        "form",
+                        "text input",
+                        "number",
+                        "textarea"
+                      ],
+                      "topRow": 25,
+                      "bottomRow": 32,
+                      "parentRowSpace": 10,
+                      "labelWidth": 5,
+                      "autoFocus": false,
+                      "type": "INPUT_WIDGET_V2",
+                      "hideCard": false,
+                      "animateLoading": true,
+                      "parentColumnSpace": 21.9375,
+                      "dynamicTriggerPathList": [],
+                      "resetOnSubmit": true,
+                      "leftColumn": 1,
+                      "dynamicBindingPathList": [
+                        {
+                          "key": "accentColor"
+                        },
+                        {
+                          "key": "borderRadius"
+                        },
+                        {
+                          "key": "defaultText"
+                        }
+                      ],
+                      "labelPosition": "Top",
+                      "labelStyle": "",
+                      "inputType": "TEXT",
+                      "isDisabled": false,
+                      "key": "bjmm7tbozo",
+                      "labelTextSize": "0.875rem",
+                      "isRequired": false,
+                      "isDeprecated": false,
+                      "rightColumn": 21,
+                      "dynamicHeight": "FIXED",
+                      "widgetId": "nx1rvk0woe",
+                      "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                      "showStepArrows": false,
+                      "isVisible": true,
+                      "label": "그룹 ID",
+                      "version": 2,
+                      "parentId": "jfe8j7akf8",
+                      "labelAlignment": "left",
+                      "renderMode": "CANVAS",
+                      "isLoading": false,
+                      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                      "maxDynamicHeight": 9000,
+                      "iconAlign": "left",
+                      "defaultText": "{{ reservationTable.selectedRow.groupId }}",
+                      "minDynamicHeight": 4
+                    },
+                    {
+                      "boxShadow": "none",
+                      "widgetName": "IconButton1",
+                      "onClick": "{{closeModal('Modal1')}}",
+                      "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+                      "displayName": "Icon Button",
+                      "iconSVG": "/static/media/icon.1a0c634ac75f9fa6b6ae7a8df882a3ba.svg",
+                      "searchTags": [
+                        "click",
+                        "submit"
+                      ],
+                      "topRow": 0,
+                      "bottomRow": 4,
+                      "type": "ICON_BUTTON_WIDGET",
+                      "hideCard": false,
+                      "animateLoading": true,
+                      "leftColumn": 58,
+                      "dynamicBindingPathList": [
+                        {
+                          "key": "buttonColor"
+                        },
+                        {
+                          "key": "borderRadius"
+                        }
+                      ],
+                      "iconSize": 24,
+                      "isDisabled": false,
+                      "key": "9ga8466817",
+                      "isDeprecated": false,
+                      "rightColumn": 64,
+                      "iconName": "cross",
+                      "widgetId": "e5rhk756oi",
+                      "isVisible": true,
+                      "version": 1,
+                      "parentId": "jfe8j7akf8",
+                      "renderMode": "CANVAS",
+                      "isLoading": false,
+                      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                      "buttonVariant": "TERTIARY"
+                    },
+                    {
+                      "widgetName": "Text2",
+                      "displayName": "Text",
+                      "iconSVG": "/static/media/icon.97c59b523e6f70ba6f40a10fc2c7c5b5.svg",
+                      "searchTags": [
+                        "typography",
+                        "paragraph",
+                        "label"
+                      ],
+                      "topRow": 1,
+                      "bottomRow": 5,
+                      "type": "TEXT_WIDGET",
+                      "hideCard": false,
+                      "animateLoading": true,
+                      "overflow": "NONE",
+                      "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
+                      "dynamicTriggerPathList": [],
+                      "leftColumn": 1,
+                      "dynamicBindingPathList": [
+                        {
+                          "key": "truncateButtonColor"
+                        },
+                        {
+                          "key": "fontFamily"
+                        },
+                        {
+                          "key": "borderRadius"
+                        }
+                      ],
+                      "shouldTruncate": false,
+                      "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
+                      "text": "상세보기",
+                      "key": "t5jlf66fp7",
+                      "isDeprecated": false,
+                      "rightColumn": 41,
+                      "textAlign": "LEFT",
+                      "dynamicHeight": "AUTO_HEIGHT",
+                      "widgetId": "k2f788p7qn",
+                      "isVisible": true,
+                      "fontStyle": "BOLD",
+                      "textColor": "#231F20",
+                      "version": 1,
+                      "parentId": "jfe8j7akf8",
+                      "renderMode": "CANVAS",
+                      "isLoading": false,
+                      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                      "maxDynamicHeight": 9000,
+                      "fontSize": "1.25rem",
+                      "minDynamicHeight": 4
+                    },
+                    {
+                      "resetFormOnClick": false,
+                      "boxShadow": "none",
+                      "widgetName": "Button1",
+                      "onClick": "{{closeModal('Modal1')}}",
+                      "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+                      "displayName": "Button",
+                      "iconSVG": "/static/media/icon.cca026338f1c8eb6df8ba03d084c2fca.svg",
+                      "searchTags": [
+                        "click",
+                        "submit"
+                      ],
+                      "topRow": 33,
+                      "bottomRow": 37,
+                      "type": "BUTTON_WIDGET",
+                      "hideCard": false,
+                      "animateLoading": true,
+                      "leftColumn": 31,
+                      "dynamicBindingPathList": [
+                        {
+                          "key": "buttonColor"
+                        },
+                        {
+                          "key": "borderRadius"
+                        }
+                      ],
+                      "text": "Close",
+                      "isDisabled": false,
+                      "key": "vxerp1ai4t",
+                      "isDeprecated": false,
+                      "rightColumn": 47,
+                      "isDefaultClickDisabled": true,
+                      "widgetId": "45hxqj0s3r",
+                      "buttonStyle": "PRIMARY",
+                      "isVisible": true,
+                      "recaptchaType": "V3",
+                      "version": 1,
+                      "parentId": "jfe8j7akf8",
+                      "renderMode": "CANVAS",
+                      "isLoading": false,
+                      "disabledWhenInvalid": false,
+                      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                      "buttonVariant": "SECONDARY",
+                      "placement": "CENTER"
+                    },
+                    {
+                      "resetFormOnClick": false,
+                      "boxShadow": "none",
+                      "widgetName": "Button2",
+                      "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+                      "displayName": "Button",
+                      "iconSVG": "/static/media/icon.cca026338f1c8eb6df8ba03d084c2fca.svg",
+                      "searchTags": [
+                        "click",
+                        "submit"
+                      ],
+                      "topRow": 33,
+                      "bottomRow": 37,
+                      "type": "BUTTON_WIDGET",
+                      "hideCard": false,
+                      "animateLoading": true,
+                      "leftColumn": 47,
+                      "dynamicBindingPathList": [
+                        {
+                          "key": "buttonColor"
+                        },
+                        {
+                          "key": "borderRadius"
+                        }
+                      ],
+                      "text": "Confirm",
+                      "isDisabled": false,
+                      "key": "vxerp1ai4t",
+                      "isDeprecated": false,
+                      "rightColumn": 63,
+                      "isDefaultClickDisabled": true,
+                      "widgetId": "uqdyxcdp6t",
+                      "buttonStyle": "PRIMARY_BUTTON",
+                      "isVisible": true,
+                      "recaptchaType": "V3",
+                      "version": 1,
+                      "parentId": "jfe8j7akf8",
+                      "renderMode": "CANVAS",
+                      "isLoading": false,
+                      "disabledWhenInvalid": false,
+                      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                      "buttonVariant": "PRIMARY",
+                      "placement": "CENTER"
+                    },
+                    {
+                      "boxShadow": "none",
+                      "widgetName": "Input1",
+                      "displayName": "Input",
+                      "iconSVG": "/static/media/icon.9f505595da61a34f563dba82adeb06ec.svg",
+                      "searchTags": [
+                        "form",
+                        "text input",
+                        "number",
+                        "textarea"
+                      ],
+                      "topRow": 7,
+                      "bottomRow": 14,
+                      "parentRowSpace": 10,
+                      "labelWidth": 5,
+                      "autoFocus": false,
+                      "type": "INPUT_WIDGET_V2",
+                      "hideCard": false,
+                      "animateLoading": true,
+                      "parentColumnSpace": 21.9375,
+                      "dynamicTriggerPathList": [],
+                      "resetOnSubmit": true,
+                      "leftColumn": 1,
+                      "dynamicBindingPathList": [
+                        {
+                          "key": "accentColor"
+                        },
+                        {
+                          "key": "borderRadius"
+                        },
+                        {
+                          "key": "defaultText"
+                        }
+                      ],
+                      "labelPosition": "Top",
+                      "labelStyle": "",
+                      "inputType": "TEXT",
+                      "isDisabled": false,
+                      "key": "bjmm7tbozo",
+                      "labelTextSize": "0.875rem",
+                      "isRequired": false,
+                      "isDeprecated": false,
+                      "rightColumn": 21,
+                      "dynamicHeight": "FIXED",
+                      "widgetId": "qvmhchnivz",
+                      "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                      "showStepArrows": false,
+                      "isVisible": true,
+                      "label": "제휴사 ID",
+                      "version": 2,
+                      "parentId": "jfe8j7akf8",
+                      "labelAlignment": "left",
+                      "renderMode": "CANVAS",
+                      "isLoading": false,
+                      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                      "maxDynamicHeight": 9000,
+                      "iconAlign": "left",
+                      "defaultText": "{{ reservationTable.selectedRow.partnerId }}",
+                      "minDynamicHeight": 4
+                    },
+                    {
+                      "boxShadow": "none",
+                      "widgetName": "Input2",
+                      "displayName": "Input",
+                      "iconSVG": "/static/media/icon.9f505595da61a34f563dba82adeb06ec.svg",
+                      "searchTags": [
+                        "form",
+                        "text input",
+                        "number",
+                        "textarea"
+                      ],
+                      "topRow": 15,
+                      "bottomRow": 22,
+                      "parentRowSpace": 10,
+                      "labelWidth": 5,
+                      "autoFocus": false,
+                      "type": "INPUT_WIDGET_V2",
+                      "hideCard": false,
+                      "animateLoading": true,
+                      "parentColumnSpace": 21.9375,
+                      "dynamicTriggerPathList": [],
+                      "resetOnSubmit": true,
+                      "leftColumn": 1,
+                      "dynamicBindingPathList": [
+                        {
+                          "key": "accentColor"
+                        },
+                        {
+                          "key": "borderRadius"
+                        },
+                        {
+                          "key": "defaultText"
+                        }
+                      ],
+                      "labelPosition": "Top",
+                      "labelStyle": "",
+                      "inputType": "TEXT",
+                      "isDisabled": false,
+                      "key": "bjmm7tbozo",
+                      "labelTextSize": "0.875rem",
+                      "isRequired": false,
+                      "isDeprecated": false,
+                      "rightColumn": 21,
+                      "dynamicHeight": "FIXED",
+                      "widgetId": "b4hm4txaqn",
+                      "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                      "showStepArrows": false,
+                      "isVisible": true,
+                      "label": "시나리오 ID",
+                      "version": 2,
+                      "parentId": "jfe8j7akf8",
+                      "labelAlignment": "left",
+                      "renderMode": "CANVAS",
+                      "isLoading": false,
+                      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                      "maxDynamicHeight": 9000,
+                      "iconAlign": "left",
+                      "defaultText": "{{ reservationTable.selectedRow.scenarioId }}",
+                      "minDynamicHeight": 4
+                    }
+                  ],
+                  "isDisabled": false,
+                  "key": "9k9xaq37fk",
+                  "isDeprecated": false,
+                  "rightColumn": 678.75,
+                  "detachFromLayout": true,
+                  "widgetId": "jfe8j7akf8",
+                  "isVisible": true,
+                  "version": 1,
+                  "parentId": "q37v30firt",
+                  "renderMode": "CANVAS",
+                  "isLoading": false
+                }
+              ],
+              "key": "jbt2qe9dnp",
+              "height": 390,
+              "isDeprecated": false,
+              "rightColumn": 43,
+              "detachFromLayout": true,
+              "dynamicHeight": "AUTO_HEIGHT",
+              "widgetId": "q37v30firt",
+              "canOutsideClickClose": true,
+              "canEscapeKeyClose": true,
+              "version": 2,
+              "parentId": "0",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+              "maxDynamicHeight": 9000,
+              "width": 1416,
+              "minDynamicHeight": 24
+            },
+            {
+              "widgetName": "reservationTitle",
+              "displayName": "Text",
+              "iconSVG": "/static/media/icon.97c59b523e6f70ba6f40a10fc2c7c5b5.svg",
+              "searchTags": [
+                "typography",
+                "paragraph",
+                "label"
+              ],
+              "topRow": 0,
+              "bottomRow": 7,
+              "parentRowSpace": 10,
+              "type": "TEXT_WIDGET",
+              "hideCard": false,
+              "animateLoading": true,
+              "overflow": "NONE",
+              "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
+              "parentColumnSpace": 28.28125,
+              "dynamicTriggerPathList": [],
+              "leftColumn": 0,
+              "dynamicBindingPathList": [
+                {
+                  "key": "truncateButtonColor"
+                },
+                {
+                  "key": "fontFamily"
+                },
+                {
+                  "key": "borderRadius"
+                }
+              ],
+              "shouldTruncate": false,
+              "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
+              "text": "예약 정보",
+              "key": "t5jlf66fp7",
+              "isDeprecated": false,
+              "rightColumn": 11,
+              "textAlign": "LEFT",
+              "dynamicHeight": "AUTO_HEIGHT",
+              "widgetId": "9lnhbcib8f",
+              "isVisible": true,
+              "fontStyle": "BOLD",
+              "textColor": "#231F20",
+              "version": 1,
+              "parentId": "0",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "originalTopRow": 0,
+              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+              "maxDynamicHeight": 9000,
+              "originalBottomRow": 7,
+              "fontSize": "3rem",
+              "minDynamicHeight": 4
+            },
+            {
+              "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+              "borderColor": "#E0DEDE",
+              "isVisibleDownload": true,
+              "iconSVG": "/static/media/icon.db8a9cbd2acd22a31ea91cc37ea2a46c.svg",
+              "topRow": 23,
+              "isSortable": true,
+              "type": "TABLE_WIDGET_V2",
+              "inlineEditingSaveOption": "ROW_LEVEL",
+              "animateLoading": true,
+              "dynamicBindingPathList": [
+                {
+                  "key": "accentColor"
+                },
+                {
+                  "key": "borderRadius"
+                },
+                {
+                  "key": "boxShadow"
+                },
+                {
+                  "key": "primaryColumns.voice.computedValue"
+                },
+                {
+                  "key": "primaryColumns.reservationInfo.computedValue"
+                },
+                {
+                  "key": "primaryColumns.seed.computedValue"
+                },
+                {
+                  "key": "primaryColumns.groupId.computedValue"
+                },
+                {
+                  "key": "primaryColumns.createdDateTime.computedValue"
+                },
+                {
+                  "key": "primaryColumns.jobId.computedValue"
+                },
+                {
+                  "key": "primaryColumns.callerMdn.computedValue"
+                },
+                {
+                  "key": "primaryColumns.callStatus.computedValue"
+                },
+                {
+                  "key": "primaryColumns.totalRecipientCount.computedValue"
+                },
+                {
+                  "key": "primaryColumns.reservationType.computedValue"
+                },
+                {
+                  "key": "primaryColumns.modifiedDateTime.computedValue"
+                },
+                {
+                  "key": "primaryColumns._id.computedValue"
+                },
+                {
+                  "key": "primaryColumns.partnerId.computedValue"
+                },
+                {
+                  "key": "primaryColumns.completionRecipientCount.computedValue"
+                },
+                {
+                  "key": "primaryColumns.scenarioId.computedValue"
+                },
+                {
+                  "key": "primaryColumns.scenarioName.computedValue"
+                },
+                {
+                  "key": "primaryColumns.retry.computedValue"
+                },
+                {
+                  "key": "primaryColumns.reservationStatus.computedValue"
+                },
+                {
+                  "key": "primaryColumns.memberId.computedValue"
+                },
+                {
+                  "key": "primaryColumns._class1.computedValue"
+                },
+                {
+                  "key": "tableData"
+                },
+                {
+                  "key": "primaryColumns.transactionIdList.computedValue"
+                }
+              ],
+              "leftColumn": 0,
+              "delimiter": ",",
+              "defaultSelectedRowIndex": 0,
+              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+              "isVisibleFilters": "true",
+              "isVisible": true,
+              "enableClientSideSearch": false,
+              "version": 1,
+              "totalRecordsCount": "",
+              "isLoading": false,
+              "onSearchTextChanged": "",
+              "childStylesheet": {
+                "button": {
+                  "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+                  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                  "boxShadow": "none"
+                },
+                "menuButton": {
+                  "menuColor": "{{appsmith.theme.colors.primaryColor}}",
+                  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                  "boxShadow": "none"
+                },
+                "iconButton": {
+                  "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+                  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                  "boxShadow": "none"
+                },
+                "editActions": {
+                  "saveButtonColor": "{{appsmith.theme.colors.primaryColor}}",
+                  "saveBorderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                  "discardButtonColor": "{{appsmith.theme.colors.primaryColor}}",
+                  "discardBorderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}"
+                }
+              },
+              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+              "originalBottomRow": 75,
+              "defaultSelectedRowIndices": [
+                0
+              ],
+              "widgetName": "reservationTable",
+              "defaultPageSize": 0,
+              "columnOrder": [
+                "partnerId",
+                "voice",
+                "seed",
+                "groupId",
+                "reservationInfo",
+                "createdDateTime",
+                "jobId",
+                "callerMdn",
+                "callStatus",
+                "totalRecipientCount",
+                "reservationType",
+                "modifiedDateTime",
+                "_id",
+                "completionRecipientCount",
+                "scenarioId",
+                "scenarioName",
+                "retry",
+                "reservationStatus",
+                "memberId",
+                "_class1",
+                "transactionIdList"
+              ],
+              "dynamicPropertyPathList": [
+                {
+                  "key": "tableData"
+                },
+                {
+                  "key": "isVisibleFilters"
+                }
+              ],
+              "displayName": "Table",
+              "bottomRow": 75,
+              "columnWidthMap": {
+                "task": 245,
+                "step": 62,
+                "status": 75,
+                "reservationInfo": 186.00000000000006
+              },
+              "parentRowSpace": 10,
+              "hideCard": false,
+              "dynamicTriggerPathList": [
+                {
+                  "key": "onSearchTextChanged"
+                },
+                {
+                  "key": "onRowSelected"
+                }
+              ],
+              "borderWidth": "1",
+              "primaryColumns": {
+                "voice": {
+                  "allowCellWrapping": false,
+                  "index": 0,
+                  "width": 150,
+                  "originalId": "voice",
+                  "id": "voice",
+                  "alias": "voice",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textColor": "",
+                  "textSize": "0.875rem",
+                  "fontStyle": "",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellEditable": false,
+                  "isEditable": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "voice",
+                  "isSaveVisible": true,
+                  "isDiscardVisible": true,
+                  "computedValue": "{{reservationTable.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"voice\"]))}}",
+                  "validation": {},
+                  "cellBackground": ""
+                },
+                "reservationInfo": {
+                  "allowCellWrapping": false,
+                  "index": 1,
+                  "width": 150,
+                  "originalId": "reservationInfo",
+                  "id": "reservationInfo",
+                  "alias": "reservationInfo",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textColor": "",
+                  "textSize": "0.875rem",
+                  "fontStyle": "",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellEditable": false,
+                  "isEditable": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "reservationInfo",
+                  "isSaveVisible": true,
+                  "isDiscardVisible": true,
+                  "computedValue": "{{reservationTable.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"reservationInfo\"]))}}",
+                  "validation": {},
+                  "cellBackground": ""
+                },
+                "seed": {
+                  "allowCellWrapping": false,
+                  "index": 2,
+                  "width": 150,
+                  "originalId": "seed",
+                  "id": "seed",
+                  "alias": "seed",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "number",
+                  "textColor": "",
+                  "textSize": "0.875rem",
+                  "fontStyle": "",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellEditable": false,
+                  "isEditable": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "seed",
+                  "isSaveVisible": true,
+                  "isDiscardVisible": true,
+                  "computedValue": "{{reservationTable.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"seed\"]))}}",
+                  "validation": {},
+                  "cellBackground": ""
+                },
+                "groupId": {
+                  "allowCellWrapping": false,
+                  "index": 3,
+                  "width": 150,
+                  "originalId": "groupId",
+                  "id": "groupId",
+                  "alias": "groupId",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textColor": "",
+                  "textSize": "0.875rem",
+                  "fontStyle": "",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellEditable": false,
+                  "isEditable": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "groupId",
+                  "isSaveVisible": true,
+                  "isDiscardVisible": true,
+                  "computedValue": "{{reservationTable.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"groupId\"]))}}",
+                  "validation": {},
+                  "cellBackground": ""
+                },
+                "createdDateTime": {
+                  "allowCellWrapping": false,
+                  "index": 4,
+                  "width": 150,
+                  "originalId": "createdDateTime",
+                  "id": "createdDateTime",
+                  "alias": "createdDateTime",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "date",
+                  "textColor": "",
+                  "textSize": "0.875rem",
+                  "fontStyle": "",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellEditable": false,
+                  "isEditable": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "createdDateTime",
+                  "isSaveVisible": true,
+                  "isDiscardVisible": true,
+                  "computedValue": "{{reservationTable.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"createdDateTime\"]))}}",
+                  "validation": {},
+                  "cellBackground": ""
+                },
+                "jobId": {
+                  "allowCellWrapping": false,
+                  "index": 7,
+                  "width": 150,
+                  "originalId": "jobId",
+                  "id": "jobId",
+                  "alias": "jobId",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textColor": "",
+                  "textSize": "0.875rem",
+                  "fontStyle": "",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellEditable": false,
+                  "isEditable": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "jobId",
+                  "isSaveVisible": true,
+                  "isDiscardVisible": true,
+                  "computedValue": "{{reservationTable.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"jobId\"]))}}",
+                  "validation": {},
+                  "cellBackground": ""
+                },
+                "callerMdn": {
+                  "allowCellWrapping": false,
+                  "index": 9,
+                  "width": 150,
+                  "originalId": "callerMdn",
+                  "id": "callerMdn",
+                  "alias": "callerMdn",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textColor": "",
+                  "textSize": "0.875rem",
+                  "fontStyle": "",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellEditable": false,
+                  "isEditable": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "callerMdn",
+                  "isSaveVisible": true,
+                  "isDiscardVisible": true,
+                  "computedValue": "{{reservationTable.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"callerMdn\"]))}}",
+                  "validation": {},
+                  "cellBackground": ""
+                },
+                "callStatus": {
+                  "allowCellWrapping": false,
+                  "index": 11,
+                  "width": 150,
+                  "originalId": "callStatus",
+                  "id": "callStatus",
+                  "alias": "callStatus",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textColor": "",
+                  "textSize": "0.875rem",
+                  "fontStyle": "",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellEditable": false,
+                  "isEditable": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "callStatus",
+                  "isSaveVisible": true,
+                  "isDiscardVisible": true,
+                  "computedValue": "{{reservationTable.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"callStatus\"]))}}",
+                  "validation": {},
+                  "cellBackground": ""
+                },
+                "totalRecipientCount": {
+                  "allowCellWrapping": false,
+                  "index": 12,
+                  "width": 150,
+                  "originalId": "totalRecipientCount",
+                  "id": "totalRecipientCount",
+                  "alias": "totalRecipientCount",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "number",
+                  "textColor": "",
+                  "textSize": "0.875rem",
+                  "fontStyle": "",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellEditable": false,
+                  "isEditable": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "totalRecipientCount",
+                  "isSaveVisible": true,
+                  "isDiscardVisible": true,
+                  "computedValue": "{{reservationTable.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"totalRecipientCount\"]))}}",
+                  "validation": {},
+                  "cellBackground": ""
+                },
+                "reservationType": {
+                  "allowCellWrapping": false,
+                  "index": 13,
+                  "width": 150,
+                  "originalId": "reservationType",
+                  "id": "reservationType",
+                  "alias": "reservationType",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textColor": "",
+                  "textSize": "0.875rem",
+                  "fontStyle": "",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellEditable": false,
+                  "isEditable": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "reservationType",
+                  "isSaveVisible": true,
+                  "isDiscardVisible": true,
+                  "computedValue": "{{reservationTable.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"reservationType\"]))}}",
+                  "validation": {},
+                  "cellBackground": ""
+                },
+                "modifiedDateTime": {
+                  "allowCellWrapping": false,
+                  "index": 14,
+                  "width": 150,
+                  "originalId": "modifiedDateTime",
+                  "id": "modifiedDateTime",
+                  "alias": "modifiedDateTime",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "date",
+                  "textColor": "",
+                  "textSize": "0.875rem",
+                  "fontStyle": "",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellEditable": false,
+                  "isEditable": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "modifiedDateTime",
+                  "isSaveVisible": true,
+                  "isDiscardVisible": true,
+                  "computedValue": "{{reservationTable.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"modifiedDateTime\"]))}}",
+                  "validation": {},
+                  "cellBackground": ""
+                },
+                "_id": {
+                  "allowCellWrapping": false,
+                  "index": 15,
+                  "width": 150,
+                  "originalId": "_id",
+                  "id": "_id",
+                  "alias": "_id",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textColor": "",
+                  "textSize": "0.875rem",
+                  "fontStyle": "",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": false,
+                  "isDisabled": false,
+                  "isCellEditable": false,
+                  "isEditable": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "_id",
+                  "isSaveVisible": true,
+                  "isDiscardVisible": true,
+                  "computedValue": "{{reservationTable.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"_id\"]))}}",
+                  "validation": {},
+                  "cellBackground": ""
+                },
+                "partnerId": {
+                  "allowCellWrapping": false,
+                  "index": 16,
+                  "width": 150,
+                  "originalId": "partnerId",
+                  "id": "partnerId",
+                  "alias": "partnerId",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textColor": "",
+                  "textSize": "0.875rem",
+                  "fontStyle": "",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellEditable": false,
+                  "isEditable": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "partnerId",
+                  "isSaveVisible": true,
+                  "isDiscardVisible": true,
+                  "computedValue": "{{reservationTable.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"partnerId\"]))}}",
+                  "validation": {},
+                  "cellBackground": ""
+                },
+                "completionRecipientCount": {
+                  "allowCellWrapping": false,
+                  "index": 18,
+                  "width": 150,
+                  "originalId": "completionRecipientCount",
+                  "id": "completionRecipientCount",
+                  "alias": "completionRecipientCount",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "number",
+                  "textColor": "",
+                  "textSize": "0.875rem",
+                  "fontStyle": "",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellEditable": false,
+                  "isEditable": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "completionRecipientCount",
+                  "isSaveVisible": true,
+                  "isDiscardVisible": true,
+                  "computedValue": "{{reservationTable.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"completionRecipientCount\"]))}}",
+                  "validation": {},
+                  "cellBackground": ""
+                },
+                "scenarioId": {
+                  "allowCellWrapping": false,
+                  "index": 19,
+                  "width": 150,
+                  "originalId": "scenarioId",
+                  "id": "scenarioId",
+                  "alias": "scenarioId",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textColor": "",
+                  "textSize": "0.875rem",
+                  "fontStyle": "",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellEditable": false,
+                  "isEditable": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "scenarioId",
+                  "isSaveVisible": true,
+                  "isDiscardVisible": true,
+                  "computedValue": "{{reservationTable.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"scenarioId\"]))}}",
+                  "validation": {},
+                  "cellBackground": ""
+                },
+                "scenarioName": {
+                  "allowCellWrapping": false,
+                  "index": 20,
+                  "width": 150,
+                  "originalId": "scenarioName",
+                  "id": "scenarioName",
+                  "alias": "scenarioName",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textColor": "",
+                  "textSize": "0.875rem",
+                  "fontStyle": "",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellEditable": false,
+                  "isEditable": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "scenarioName",
+                  "isSaveVisible": true,
+                  "isDiscardVisible": true,
+                  "computedValue": "{{reservationTable.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"scenarioName\"]))}}",
+                  "validation": {},
+                  "cellBackground": ""
+                },
+                "retry": {
+                  "allowCellWrapping": false,
+                  "index": 21,
+                  "width": 150,
+                  "originalId": "retry",
+                  "id": "retry",
+                  "alias": "retry",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textColor": "",
+                  "textSize": "0.875rem",
+                  "fontStyle": "",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellEditable": false,
+                  "isEditable": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "retry",
+                  "isSaveVisible": true,
+                  "isDiscardVisible": true,
+                  "computedValue": "{{reservationTable.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"retry\"]))}}",
+                  "validation": {},
+                  "cellBackground": ""
+                },
+                "reservationStatus": {
+                  "allowCellWrapping": false,
+                  "index": 22,
+                  "width": 150,
+                  "originalId": "reservationStatus",
+                  "id": "reservationStatus",
+                  "alias": "reservationStatus",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textColor": "",
+                  "textSize": "0.875rem",
+                  "fontStyle": "",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellEditable": false,
+                  "isEditable": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "reservationStatus",
+                  "isSaveVisible": true,
+                  "isDiscardVisible": true,
+                  "computedValue": "{{reservationTable.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"reservationStatus\"]))}}",
+                  "validation": {},
+                  "cellBackground": ""
+                },
+                "memberId": {
+                  "allowCellWrapping": false,
+                  "index": 23,
+                  "width": 150,
+                  "originalId": "memberId",
+                  "id": "memberId",
+                  "alias": "memberId",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "number",
+                  "textColor": "",
+                  "textSize": "0.875rem",
+                  "fontStyle": "",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellEditable": false,
+                  "isEditable": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "memberId",
+                  "isSaveVisible": true,
+                  "isDiscardVisible": true,
+                  "computedValue": "{{reservationTable.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"memberId\"]))}}",
+                  "validation": {},
+                  "cellBackground": ""
+                },
+                "_class1": {
+                  "allowCellWrapping": false,
+                  "index": 17,
+                  "width": 150,
+                  "originalId": "_class",
+                  "id": "_class1",
+                  "alias": "_class",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textColor": "",
+                  "textSize": "0.875rem",
+                  "fontStyle": "",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": false,
+                  "isDisabled": false,
+                  "isCellEditable": false,
+                  "isEditable": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "_class",
+                  "isSaveVisible": true,
+                  "isDiscardVisible": true,
+                  "computedValue": "{{reservationTable.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"_class\"]))}}",
+                  "validation": {},
+                  "cellBackground": ""
+                },
+                "transactionIdList": {
+                  "allowCellWrapping": false,
+                  "index": 20,
+                  "width": 150,
+                  "originalId": "transactionIdList",
+                  "id": "transactionIdList",
+                  "alias": "transactionIdList",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textColor": "",
+                  "textSize": "0.875rem",
+                  "fontStyle": "",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellEditable": false,
+                  "isEditable": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "transactionIdList",
+                  "isSaveVisible": true,
+                  "isDiscardVisible": true,
+                  "computedValue": "{{reservationTable.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"transactionIdList\"]))}}",
+                  "validation": {},
+                  "cellBackground": ""
+                }
+              },
+              "onRowSelected": "{{showModal('Modal1')}}",
+              "key": "2r01jh954t",
+              "isDeprecated": false,
+              "rightColumn": 63,
+              "textSize": "0.875rem",
+              "widgetId": "j3z5t3z5js",
+              "tableData": "{{ appsmith.store.tableData }}",
+              "label": "Data",
+              "searchKey": "",
+              "parentId": "0",
+              "serverSidePaginationEnabled": true,
+              "renderMode": "CANVAS",
+              "horizontalAlignment": "LEFT",
+              "isVisibleSearch": false,
+              "originalTopRow": 23,
+              "isVisiblePagination": true,
+              "verticalAlignment": "CENTER"
+            },
+            {
+              "boxShadow": "none",
+              "widgetName": "searchTarget",
+              "displayName": "Input",
+              "iconSVG": "/static/media/icon.9f505595da61a34f563dba82adeb06ec.svg",
+              "onSubmit": "{{tableQuery.runQuery()}}",
+              "searchTags": [
+                "form",
+                "text input",
+                "number",
+                "textarea"
+              ],
+              "topRow": 17,
+              "bottomRow": 21,
+              "parentRowSpace": 10,
+              "labelWidth": 5,
+              "autoFocus": false,
+              "type": "INPUT_WIDGET_V2",
+              "hideCard": false,
+              "animateLoading": true,
+              "parentColumnSpace": 24.875,
+              "dynamicTriggerPathList": [
+                {
+                  "key": "onTextChanged"
+                },
+                {
+                  "key": "onSubmit"
+                }
+              ],
+              "resetOnSubmit": false,
+              "leftColumn": 12,
+              "dynamicBindingPathList": [
+                {
+                  "key": "accentColor"
+                },
+                {
+                  "key": "borderRadius"
+                }
+              ],
+              "labelPosition": "Top",
+              "labelStyle": "",
+              "inputType": "TEXT",
+              "isDisabled": false,
+              "key": "vhfn7xayx6",
+              "labelTextSize": "0.875rem",
+              "isRequired": false,
+              "onTextChanged": "",
+              "isDeprecated": false,
+              "rightColumn": 32,
+              "dynamicHeight": "FIXED",
+              "widgetId": "3mnr70tvqj",
+              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+              "showStepArrows": false,
+              "isVisible": true,
+              "label": "",
+              "version": 2,
+              "parentId": "0",
+              "labelAlignment": "left",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "originalTopRow": 23,
+              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+              "maxDynamicHeight": 9000,
+              "originalBottomRow": 28,
+              "iconAlign": "left",
+              "defaultText": "",
+              "minDynamicHeight": 4
+            },
+            {
+              "boxShadow": "none",
+              "widgetName": "searchSelect",
+              "isFilterable": true,
+              "dynamicPropertyPathList": [],
+              "displayName": "Select",
+              "iconSVG": "/static/media/icon.bd99caba5853ad71e4b3d8daffacb3a2.svg",
+              "labelText": "",
+              "searchTags": [
+                "dropdown"
+              ],
+              "topRow": 17,
+              "bottomRow": 21,
+              "parentRowSpace": 10,
+              "labelWidth": 5,
+              "type": "SELECT_WIDGET",
+              "serverSideFiltering": false,
+              "hideCard": false,
+              "defaultOptionValue": "{{ ((options, serverSideFiltering) => ( `all`))(searchSelect.options, searchSelect.serverSideFiltering) }}",
+              "animateLoading": true,
+              "parentColumnSpace": 24.875,
+              "dynamicTriggerPathList": [
+                {
+                  "key": "onOptionChange"
+                }
+              ],
+              "leftColumn": 0,
+              "dynamicBindingPathList": [
+                {
+                  "key": "accentColor"
+                },
+                {
+                  "key": "borderRadius"
+                },
+                {
+                  "key": "defaultOptionValue"
+                }
+              ],
+              "labelPosition": "Top",
+              "options": "[\n\t{\n    \"label\": \"전체\",\n    \"value\": \"all\"\n  },\n  {\n    \"label\": \"제휴사 ID\",\n    \"value\": \"partnerId\"\n  },\n  {\n    \"label\": \"시나리오 ID\",\n    \"value\": \"scenarioId\"\n  }\n]",
+              "placeholderText": "Select option",
+              "isDisabled": false,
+              "key": "cn2hj0recn",
+              "labelTextSize": "0.875rem",
+              "isRequired": false,
+              "isDeprecated": false,
+              "rightColumn": 12,
+              "dynamicHeight": "FIXED",
+              "widgetId": "t2pr918i3j",
+              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+              "isVisible": true,
+              "version": 1,
+              "parentId": "0",
+              "labelAlignment": "left",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "originalTopRow": 17,
+              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+              "maxDynamicHeight": 9000,
+              "originalBottomRow": 21,
+              "onOptionChange": "",
+              "minDynamicHeight": 4
+            },
+            {
+              "resetFormOnClick": false,
+              "boxShadow": "none",
+              "widgetName": "searchReservation",
+              "onClick": "{{tableQuery.runQuery()}}",
+              "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+              "displayName": "Button",
+              "iconSVG": "/static/media/icon.cca026338f1c8eb6df8ba03d084c2fca.svg",
+              "searchTags": [
+                "click",
+                "submit"
+              ],
+              "topRow": 17,
+              "bottomRow": 21,
+              "parentRowSpace": 10,
+              "type": "BUTTON_WIDGET",
+              "hideCard": false,
+              "animateLoading": true,
+              "parentColumnSpace": 19.8125,
+              "dynamicTriggerPathList": [
+                {
+                  "key": "onClick"
+                }
+              ],
+              "leftColumn": 32,
+              "dynamicBindingPathList": [
+                {
+                  "key": "buttonColor"
+                },
+                {
+                  "key": "borderRadius"
+                }
+              ],
+              "text": "조회",
+              "isDisabled": false,
+              "key": "r270ll4c7m",
+              "isDeprecated": false,
+              "rightColumn": 37,
+              "isDefaultClickDisabled": true,
+              "widgetId": "j6rm3jt3ev",
+              "isVisible": true,
+              "recaptchaType": "V3",
+              "version": 1,
+              "parentId": "0",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "disabledWhenInvalid": false,
+              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+              "buttonVariant": "PRIMARY",
+              "placement": "CENTER"
+            },
+            {
+              "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+              "setAdaptiveYMin": true,
+              "widgetName": "Chart1",
+              "allowScroll": false,
+              "displayName": "Chart",
+              "iconSVG": "/static/media/icon.6adbe31ed817fc4bfd66f9f0a6fc105c.svg",
+              "searchTags": [
+                "graph",
+                "visuals",
+                "visualisations"
+              ],
+              "topRow": 87,
+              "bottomRow": 144,
+              "parentRowSpace": 10,
+              "type": "CHART_WIDGET",
+              "hideCard": false,
+              "chartData": {
+                "heqcbg2zd9": {
+                  "seriesName": "Sales",
+                  "data": "{{ appsmith.store.chartData }}"
+                }
+              },
+              "animateLoading": true,
+              "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
+              "parentColumnSpace": 19.8125,
+              "dynamicTriggerPathList": [],
+              "leftColumn": 0,
+              "dynamicBindingPathList": [
+                {
+                  "key": "borderRadius"
+                },
+                {
+                  "key": "boxShadow"
+                },
+                {
+                  "key": "accentColor"
+                },
+                {
+                  "key": "fontFamily"
+                },
+                {
+                  "key": "chartData.heqcbg2zd9.data"
+                }
+              ],
+              "customFusionChartConfig": {
+                "type": "column2d",
+                "dataSource": {
+                  "data": [
+                    {
+                      "label": "Product1",
+                      "value": 20000
+                    },
+                    {
+                      "label": "Product2",
+                      "value": 22000
+                    },
+                    {
+                      "label": "Product3",
+                      "value": 32000
+                    }
+                  ],
+                  "chart": {
+                    "caption": "Sales Report",
+                    "xAxisName": "Product Line",
+                    "yAxisName": "Revenue($)",
+                    "theme": "fusion",
+                    "alignCaptionWithCanvas": 1,
+                    "captionFontSize": "24",
+                    "captionAlignment": "center",
+                    "captionPadding": "20",
+                    "captionFontColor": "#231F20",
+                    "legendIconSides": "4",
+                    "legendIconBgAlpha": "100",
+                    "legendIconAlpha": "100",
+                    "legendPosition": "top",
+                    "canvasPadding": "0",
+                    "chartLeftMargin": "20",
+                    "chartTopMargin": "10",
+                    "chartRightMargin": "40",
+                    "chartBottomMargin": "10",
+                    "xAxisNameFontSize": "14",
+                    "labelFontSize": "12",
+                    "labelFontColor": "#716e6e",
+                    "xAxisNameFontColor": "#716e6e",
+                    "yAxisNameFontSize": "14",
+                    "yAxisValueFontSize": "12",
+                    "yAxisValueFontColor": "#716e6e",
+                    "yAxisNameFontColor": "#716e6e"
+                  }
+                }
+              },
+              "key": "1hbiwx0com",
+              "isDeprecated": false,
+              "rightColumn": 63,
+              "widgetId": "ulzv4nv2cl",
+              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+              "isVisible": true,
+              "version": 1,
+              "parentId": "0",
+              "labelOrientation": "auto",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "yAxisName": "원",
+              "originalTopRow": 87,
+              "chartName": "일간 통화료",
+              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+              "xAxisName": "생성날짜",
+              "originalBottomRow": 144,
+              "chartType": "LINE_CHART"
+            },
+            {
+              "resetFormOnClick": false,
+              "boxShadow": "none",
+              "widgetName": "Button3",
+              "onClick": "{{chartQuery.runQuery()}}",
+              "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+              "displayName": "Button",
+              "iconSVG": "/static/media/icon.cca026338f1c8eb6df8ba03d084c2fca.svg",
+              "searchTags": [
+                "click",
+                "submit"
+              ],
+              "topRow": 82,
+              "bottomRow": 86,
+              "parentRowSpace": 10,
+              "type": "BUTTON_WIDGET",
+              "hideCard": false,
+              "animateLoading": true,
+              "parentColumnSpace": 19.8125,
+              "dynamicTriggerPathList": [
+                {
+                  "key": "onClick"
+                }
+              ],
+              "leftColumn": 23,
+              "dynamicBindingPathList": [
+                {
+                  "key": "buttonColor"
+                },
+                {
+                  "key": "borderRadius"
+                }
+              ],
+              "text": "조회",
+              "isDisabled": false,
+              "key": "r270ll4c7m",
+              "isDeprecated": false,
+              "rightColumn": 30,
+              "isDefaultClickDisabled": true,
+              "widgetId": "xi32r6z51a",
+              "isVisible": true,
+              "recaptchaType": "V3",
+              "version": 1,
+              "parentId": "0",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "originalTopRow": 82,
+              "disabledWhenInvalid": false,
+              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+              "originalBottomRow": 86,
+              "buttonVariant": "PRIMARY",
+              "placement": "CENTER"
+            },
+            {
+              "boxShadow": "none",
+              "widgetName": "chartPartnerName",
+              "displayName": "Input",
+              "iconSVG": "/static/media/icon.9f505595da61a34f563dba82adeb06ec.svg",
+              "onSubmit": "{{chartQuery.runQuery()}}",
+              "searchTags": [
+                "form",
+                "text input",
+                "number",
+                "textarea"
+              ],
+              "topRow": 79,
+              "bottomRow": 86,
+              "parentRowSpace": 10,
+              "labelWidth": 5,
+              "autoFocus": false,
+              "type": "INPUT_WIDGET_V2",
+              "hideCard": false,
+              "animateLoading": true,
+              "parentColumnSpace": 19.8125,
+              "dynamicTriggerPathList": [
+                {
+                  "key": "onSubmit"
+                }
+              ],
+              "resetOnSubmit": false,
+              "leftColumn": 0,
+              "dynamicBindingPathList": [
+                {
+                  "key": "accentColor"
+                },
+                {
+                  "key": "borderRadius"
+                }
+              ],
+              "labelPosition": "Top",
+              "labelStyle": "",
+              "inputType": "TEXT",
+              "isDisabled": false,
+              "key": "rn0tbylanw",
+              "labelTextSize": "0.875rem",
+              "isRequired": false,
+              "isDeprecated": false,
+              "rightColumn": 23,
+              "dynamicHeight": "FIXED",
+              "widgetId": "tho71y9hfl",
+              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+              "showStepArrows": false,
+              "isVisible": true,
+              "label": "제휴사명",
+              "version": 2,
+              "parentId": "0",
+              "labelAlignment": "left",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "originalTopRow": 79,
+              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+              "maxDynamicHeight": 9000,
+              "originalBottomRow": 86,
+              "iconAlign": "left",
+              "defaultText": "",
+              "minDynamicHeight": 4
+            }
+          ]
+        },
+        "layoutOnLoadActions": [],
+        "layoutOnLoadActionErrors": [],
+        "validOnPageLoadActions": true,
+        "id": "reservation",
+        "deleted": false,
+        "policies": [],
+        "userPermissions": []
+      }
+    ],
+    "userPermissions": [],
+    "policies": [],
+    "isHidden": false
+  },
+  "deleted": false,
+  "gitSyncId": "63d1c5b8b12b4c3f1004693f_63d1c5b8b12b4c3f10046941"
+}

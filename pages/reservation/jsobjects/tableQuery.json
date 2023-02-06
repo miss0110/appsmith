@@ -1,0 +1,16 @@
+{
+  "unpublishedCollection": {
+    "name": "tableQuery",
+    "pageId": "reservation",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "body": "export default {\n\trunQuery: async () => {\n\t\tconst query = searchSelect.selectedOptionValue === \"all\" ? FindAllReservation : FindByReservation;\n\t\n\t\tawait query.run();\n\t\tawait storeValue('tableData', query.data)\n\t}\n}\n",
+    "variables": [],
+    "userPermissions": []
+  },
+  "id": "reservation_tableQuery",
+  "deleted": false,
+  "gitSyncId": "63d1c5b8b12b4c3f1004693f_63d357fbb12b4c3f10046985"
+}

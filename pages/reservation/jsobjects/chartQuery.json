@@ -1,0 +1,16 @@
+{
+  "unpublishedCollection": {
+    "name": "chartQuery",
+    "pageId": "reservation",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "body": "export default {\n\trunQuery: async () => {\n\t\t\n\t\tawait dailyCallCharges.run();\n\t\tconst data = dailyCallCharges.data.map(data => {\n\t\t\treturn {\n\t\t\t\tx : data[\"_id\"].callDate,\n\t\t\t\ty : data.billingCallCharges\n\t\t\t}\n\t\t});\n\t\t\n\t\tawait storeValue('chartData', data);\n\t}\n}",
+    "variables": [],
+    "userPermissions": []
+  },
+  "id": "reservation_chartQuery",
+  "deleted": false,
+  "gitSyncId": "63d1c5b8b12b4c3f1004693f_63d71819b12b4c3f10046998"
+}
